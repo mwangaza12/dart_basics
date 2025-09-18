@@ -31,7 +31,8 @@ void main() {
   Set<String> colors = {"Red", "Green", "Blue"};
   print("Colors: $colors");
 
-  Set<int> uniqueNumbers = {1, 2, 3, 4, 5, 5, 6, 6};
+  // Set<int> uniqueNumbers = {1, 2, 3, 4, 5, 5, 6, 6};  // 1,2,3,4,5,6 will be printed out
+  Set<int> uniqueNumbers = {1, 2, 3, 4, 5, 6};
   print("Unique Numbers: $uniqueNumbers");
 
   // 8. Runes - Unicode characters
