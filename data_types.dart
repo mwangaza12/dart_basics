@@ -45,4 +45,14 @@ void main() {
   // 10. Null - represents the absence of a value
   String? middleName;
   print("Middle Name: $middleName");
+
+  // 11. num - can represent either int or double
+  num marks = 10;
+  print("Marks is $marks");
+  num amount = 5280.22;
+  print("My bank amount is $amount");
+
+  // 12. BigInt - used to store large integers
+  BigInt bigNumber = BigInt.parse("383822990100294874820101");
+  print(bigNumber);
 }
