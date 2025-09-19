@@ -30,6 +30,9 @@ void greetUserWithAge(String name, [int? age]) {
 // 5. lambda function (anonymous function)
 void name(String name) => print("Your name is $name");
 
+var list = [1, 2, 3, 4, 5];
+
+
 void main() {
   greet();
 
@@ -41,4 +44,22 @@ void main() {
   greetUserWithAge("Joseph");
 
   name("Joseph Mwangaza");
+
+  // using lambda function to iterate through a list
+  list.forEach((element) {
+    print("Element: $element");
+  }); 
+
+  // assigning a lambda function to a variable
+  var multiply = (int a, int b) => a * b;
+  int product = multiply(5, 10);
+  print("The product is $product");
+
+  // using anonymous function as a callback
+  var performOperation = (int a, int b, Function operation) {
+    return operation(a, b);
+  };
+  int difference = performOperation(10, 5, (a, b) => a - b);
+  print("The difference is $difference");
+
 }
