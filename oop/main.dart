@@ -1,4 +1,5 @@
 class Person {
+  // instance variables
   String name;
   int age;
   String? address; // nullable variable
