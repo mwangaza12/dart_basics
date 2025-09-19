@@ -32,7 +32,6 @@ void name(String name) => print("Your name is $name");
 
 var list = [1, 2, 3, 4, 5];
 
-
 void main() {
   greet();
 
@@ -48,7 +47,7 @@ void main() {
   // using lambda function to iterate through a list
   list.forEach((element) {
     print("Element: $element");
-  }); 
+  });
 
   // assigning a lambda function to a variable
   var multiply = (int a, int b) => a * b;
@@ -62,4 +61,13 @@ void main() {
   int difference = performOperation(10, 5, (a, b) => a - b);
   print("The difference is $difference");
 
+  // common collection methods
+  var numbers = [1, 2, 3, 4, 5];
+  print(numbers.isEmpty);
+  print(numbers.isNotEmpty);
+
+  List<String> colors = ["red", "green", "blue"];
+  colors.map((color) => color.toUpperCase()).forEach((color) {
+    print(color);
+  });
 }
