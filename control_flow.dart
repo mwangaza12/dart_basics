@@ -88,4 +88,10 @@ void main() {
 
   divide(12, 11);
   print("Division: ${divide(12, 11)}");
+
+  // for in loop
+  var names = ["Joseph", "Mwangaza", "Mokoli"];
+  for (var name in names) {
+    print(name);
+  }
 }
