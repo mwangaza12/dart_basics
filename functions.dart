@@ -70,4 +70,11 @@ void main() {
   colors.map((color) => color.toUpperCase()).forEach((color) {
     print(color);
   });
+
+
+  myFunc(String name1, [name2]){
+    return "Hello $name1 & $name2";
+  }
+  print(myFunc("Joseph"));
+
 }
